@@ -366,3 +366,114 @@
 
         <div class="card">
             <h3>Education</h3>
+            <div class="edu-item">
+                <div class="edu-year">2023 – PRESENT</div>
+                <div class="edu-course">BTLED Information Communition Technology</div>
+                <div class="edu-school">Colegio De la ciudad de Zamboanga<br>2nd Year • Expected Graduation: 2O28</div>
+            </div>
+            <div class="edu-item">
+                <div class="edu-year">GRADUATED 2020</div>
+                <div class="edu-course">Senior High School -TVL truck, Agri-Crop Production</div>
+                <div class="edu-school">Sibuco Senior high<br>With honor• Best in Immersion</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact + Grade Checker -->
+    <div class="grid-container">
+        <div class="card">
+            <h3>Contact</h3>
+            <div class="contact-item">
+                <div class="contact-label">EMAIL</div>
+                <div>miguelginequino@gmail.com</div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-label">LOCATION</div>
+                <div>Zamboanga City, PH</div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-label">Contact number</div>
+                <div>09971978479</div>
+            </div>
+        </div>
+
+        <div class="card grade-checker">
+            <h3>Grade Checker</h3>
+            <p>Enter any grade (0–100) to see your standing.</p>
+            <div class="input-group">
+                <input type="number" id="gradeInput" value="78" min="0" max="100">
+                <button id="checkBtn">Check</button>
+            </div>
+            <div id="resultBox" class="result">
+                <span id="resultText"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Projects Section -->
+    <div class="card">
+        <h3>Projects</h3>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h4>Barangay Info System</h4>
+                <p> web-based application designed to organize and manage all important records and transactions of the local barangay office. It helps officials easily store, update, and retrieve resident data, issued certificates, and incident reports without using manual paper files. This system makes community services faster, more accurate, and efficient for both barangay staff and residents..</p>
+                <div class="tech-stack">
+                    <span class="tech">HTML</span>
+                    <span class="tech">CSS</span>
+                    <span class="tech">JAVASCRIPT</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h4>Budget Tracker</h4>
+                <p>Budget Tracker is a simple tool to record your income and daily expenses. It automatically calculates your remaining balance to show how much money you have left. This helps you track spending and manage your budget easily and wisely..</p>
+                <div class="tech-stack">
+                    <span class="tech">HTML</span>
+                    <span class="tech">CSS</span>
+                    <span class="tech">JS</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h4>Portfolio v1</h4>
+                <p>My ICT 106 final project — the foundation this site is built on.</p>
+                <div class="tech-stack">
+                    <span class="tech">HTML</span>
+                    <span class="tech">CSS</span>
+                </div>
+            </div>
+            <div class="project-card">
+           <h3>Student Attendance System</h3>
+          <p>  A web-based attendance management    system that allows teachers to record, monitor, and manage student attendance efficiently.
+    </p>
+           <div class="tags">
+       <span class="tech">ATTENDANCE</span>    
+       <span class="tech">HTML</span>
+       <span class="tech">CSS</span>
+       <span class="tech">JAVASCRIPT</span>
+     </div>
+  </div>
+                 </div>
+             </div>
+             <div class="project-card">
+                 <h4>Python Quiz App</h4>
+                 <p>GUI quiz application written in Python for an ICT elective course.</p>
+                 
+                 <div class="tech-stack">
+        <span class="tech">HTML</span>
+        <span class="tech">CSS</span>
+        <span class="tech">JAVASCRIPT</span>
+        <span class="tech">PYTHON</span>                       
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- JavaScript for Grade Checker -->
+     <script>
+         const gradeInput = document.getElementById('gradeInput');
+         const checkBtn = document.getElementById('checkBtn');
+         const resultBox = document.getElementById('resultBox');
+         const resultText = document.getElementById('resultText');
+         checkBtn.addEventListener('click', () => {
+             const grade = parseInt(gradeInput.value);
+             resultBox.style.display = '
